@@ -1,1 +1,9 @@
-<div [innerHTML]="Sports.htmlOutput()"></div>
+<div class="content-card" (click)="OnClick(content.id,content.title)">
+    <h1>{{content.title}}</h1>
+<p>{{content.description}}</p>
+<p>Creator:{{content.creator}}</p>
+<p *ngIf="content.type">Type: {{ content.type }}</p>
+    <p *ngIf="content.tags">Tags: {{ content.Tags}}</p>
+    <img *ngIf="content.imgUrl" src="{{content.imgUrl}}" alt="{{content.title}}" >
+
+</div>
