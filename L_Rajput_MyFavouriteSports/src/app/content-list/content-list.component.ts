@@ -81,9 +81,18 @@ title: any;
       imgUrl: 'https://imgs.search.brave.com/IbTiDKLvNT9gAuuzbIw4kuPy1xOV4MSM3h5DTzYubP4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9taWth/c2FzcG9ydHNjYS0y/LmF6dXJlZWRnZS5u/ZXQvaW1nL3Byb2R1/Y3QvVjIwMFdfMS5q/cGc_ZnY9QkIxQkYw/QjQwRUVBRTYzNkE5/NTRDNjVGQzNCMEFF/QzE',
       type: 'description',
       tags: ['Volleyball', 'Live Cast', 'Sports']
-    }
-  ];
+    },
 
+  {
+    id: 7,
+    title: 'Badminton',
+    description: 'Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are singles.',
+    creator: 'TeamSports',
+    imgUrl: 'https://sportsmatik.com/uploads/matik-sports-corner/matik-know-how/badminton1_1562313127.jpg',
+    type: 'description',
+    tags: ['Badminton', 'Live Cast', 'Sports']
+  }
+];
 }
 filterResults(text: string){
   this.sportsContent=this.sportsContent.filter(s=>s.title.toLowerCase().includes(text.toLowerCase()))
