@@ -1,3 +1,10 @@
-<div *ngFor="let item of sportsContent; index as i; first as isFirst;">
-<app-content-card [content]="item"></app-content-card>
-</div>    
+<input [(ngModel)]="title">
+
+<button (click)="filterResults(title)">Filter</button>
+<span [style.backgroundColor]='bgColor'>{{result}}</span>
+<div *ngFor="let item of sportsContent|sortType:'Video'; index as i; first as isFirst;" [class.Video]='sportsContent|sortType'>
+    <app-content-card [content]="item"></app-content-card>
+</div>
+<div *ngFor="let item of sportsContent|sortType:'Description'; index as i; first as isFirst;"[class.Description]='sportsContent|sortType'>
+    <app-content-card [content]="item"></app-content-card>
+</div>
