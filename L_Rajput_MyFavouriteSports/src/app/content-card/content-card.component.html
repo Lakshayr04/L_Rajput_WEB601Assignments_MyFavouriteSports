@@ -2,8 +2,10 @@
     <h1>{{content.title}}</h1>
     <p>{{content.description}}</p>
     <p>Creator:{{content.creator}}</p>
-    <p *ngIf="content.type">Type: {{ content.type }}</p>
-    <p *ngIf="content.tags">Tags: {{ content.Tags}}</p>
-    <img *ngIf="content.imgUrl" src="{{content.imgUrl}}" alt="{{content.title}}">
-
-</div>
+    <p>Type: <span appHoverAffect [hover]='"underline"'>{{content.type}}</span></p>
+    <p *ngIf="content.tags">Tags: <span *ngFor="let item of content.tags;"><span appHoverAffect [bold]='"bold"' > {{item}}, </span></span></p>
+    <div [ngSwitch]="content.imgUrl">
+        <img *ngSwitchCase="undefined" src="./../../assets/image.jpg ">
+        <img *ngSwitchDefault="content.imgUrl" src="{{content.imgUrl}}" alt="{{content.title}}">
+    </div>
+</div>      
