@@ -1,4 +1,6 @@
-<input [(ngModel)]="title">
+<app-create-content></app-create-content>
+<br />
+<input [ngModel]="title">
 
 <button (click)="filterResults(title)">Filter</button>
 <span [style.backgroundColor]='bgColor'>{{result}}</span>

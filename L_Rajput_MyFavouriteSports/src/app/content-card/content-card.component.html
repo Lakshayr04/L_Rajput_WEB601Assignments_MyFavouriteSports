@@ -4,8 +4,8 @@
     <p>Creator:{{content.creator}}</p>
     <p>Type: <span appHoverAffect [hover]='"underline"'>{{content.type}}</span></p>
     <p *ngIf="content.tags">Tags: <span *ngFor="let item of content.tags;"><span appHoverAffect [bold]='"bold"' > {{item}}, </span></span></p>
-    <div [ngSwitch]="content.imgUrl">
+    <!-- <div [ngSwitch]="content.imgUrl">
         <img *ngSwitchCase="undefined" src="./../../assets/image.jpg ">
         <img *ngSwitchDefault="content.imgUrl" src="{{content.imgUrl}}" alt="{{content.title}}">
-    </div>
+    </div> -->
 </div>      

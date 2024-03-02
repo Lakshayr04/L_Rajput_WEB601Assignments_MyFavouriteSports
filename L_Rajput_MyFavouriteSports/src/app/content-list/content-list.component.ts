@@ -4,13 +4,14 @@ import { ContentCardComponent } from "../content-card/content-card.component";
 import { CommonModule } from '@angular/common';
 import { SortTypePipe } from "../sort-type.pipe";
 import { FormsModule } from '@angular/forms';
+import { CreateContentComponent } from '../create-content/create-content.component';
 
 @Component({
     selector: 'app-content-list',
     standalone: true,
     templateUrl: './content-list.component.html',
     styleUrl: './content-list.component.scss',
-    imports: [ContentCardComponent, CommonModule, SortTypePipe,FormsModule]
+    imports: [ContentCardComponent, CommonModule, SortTypePipe,FormsModule,CreateContentComponent]
 })
 export class ContentListComponent implements OnInit{
 
