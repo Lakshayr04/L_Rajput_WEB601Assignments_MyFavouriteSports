@@ -1,10 +1,20 @@
-<input [(ngModel)]="title">
+<app-messages></app-messages>
 
+<input [(ngModel)]="title">
 <button (click)="filterResults(title)">Filter</button>
 <span [style.backgroundColor]='bgColor'>{{result}}</span>
-<div *ngFor="let item of sportsContent|sortType:'Video'; index as i; first as isFirst;" [class.Video]='sportsContent|sortType'>
+
+<br/>
+<hr>
+<input [(ngModel)]="id">
+<button (click)="single(id)">Search</button>
+<br/>
+<app-content-card [content]="Constent"></app-content-card>
+<div *ngFor="let item of sportsContent|sortType:'Video'; index as i; first as isFirst;"
+    [class.Video]='sportsContent|sortType'>
     <app-content-card [content]="item"></app-content-card>
 </div>
-<div *ngFor="let item of sportsContent|sortType:'Description'; index as i; first as isFirst;"[class.Description]='sportsContent|sortType'>
+<div *ngFor="let item of sportsContent|sortType:'Description'; index as i; first as isFirst;"
+    [class.Description]='sportsContent|sortType'>
     <app-content-card [content]="item"></app-content-card>
 </div>
