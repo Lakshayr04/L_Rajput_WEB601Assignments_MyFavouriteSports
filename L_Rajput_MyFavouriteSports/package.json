@@ -1,15 +1,15 @@
 {
   "name": "l-rajput-my-favourite-sports",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generatecomponent":"npm run-script generatecomponent",
-     "generatepipe":"npm run-script generatepipe",
-    "genreratedirective":"npm run-script generatedirective"
+    "generatecomponent": "npm run-script generatecomponent",
+    "generatepipe": "npm run-script generatepipe",
+    "genreratedirective": "npm run-script generatedirective"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^17.1.0",
     "@angular/platform-browser-dynamic": "^17.1.0",
     "@angular/router": "^17.1.0",
+    "angular-in-memory-web-api": "^0.17.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

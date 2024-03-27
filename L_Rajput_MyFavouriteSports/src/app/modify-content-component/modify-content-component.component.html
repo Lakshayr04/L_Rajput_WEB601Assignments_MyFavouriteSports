@@ -1,0 +1,19 @@
+<label>Title:</label>
+<input type="text" [(ngModel)]="data.title">
+
+<label>Description:</label>
+<textarea [(ngModel)]="data.description"></textarea>
+
+<label>Creator:</label>
+<input type="text" [(ngModel)]="data.creator">
+
+<label>Image URL:</label>
+<input type="text" [(ngModel)]="data.imgUrl">
+
+<label>Type:</label>
+<input type="text" [(ngModel)]="data.type">
+
+<label>Tags:</label>
+<input type="text" [(ngModel)]="data.tags">
+
+<button class="btn btn-primary" (click)="submit()">Submit</button>
